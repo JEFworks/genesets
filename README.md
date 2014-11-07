@@ -37,11 +37,11 @@ genes.in.pathway2 <- get(pathways[2], env=my.env)
 - MSigDB_Hs_GS.RData
   - Contains: MSigDB.Hs.GS2Symbol 
   - RAW data download available at http://www.broadinstitute.org/gsea/downloads.jsp
-  - Made usng latest version as of 10/28/14
+  - Made using latest version as of 10/28/14
 - GO_Hs_GS.RData
   - Contains: GO.Hs.GS2ENSEMBL, GO.Hs.GS2Symbol, GO.Hs.Symbol2HS, GO.Hs.ENSEMBL2GS, GO.GS2Name
   - RAW data download available at http://geneontology.org/page/download-annotations
-  - Made using latest version as of 8/1/2013
+  - Made using latest version as of 8/1/2013 (Note a newer version has since been made available)
 
 ### Code Tutorial
 - gmt2gs.R
