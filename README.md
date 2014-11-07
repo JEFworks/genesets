@@ -32,10 +32,16 @@ genes.in.pathway2 <- get(pathways[2], env=my.env)
 ### Gene Sets
 - CPDB_Hs_GS.RData
   - Contains: CPDB.Hs.GS2ENSEMBL
+  - RAW data download available at http://consensuspathdb.org
+  - Made using latest version as of 2/23/14
 - MSigDB_Hs_GS.RData
   - Contains: MSigDB.Hs.GS2Symbol 
+  - RAW data download available at http://www.broadinstitute.org/gsea/downloads.jsp
+  - Made usng latest version as of 10/28/14
 - GO_Hs_GS.RData
   - Contains: GO.Hs.GS2ENSEMBL, GO.Hs.GS2Symbol, GO.Hs.Symbol2HS, GO.Hs.ENSEMBL2GS, GO.GS2Name
+  - RAW data download available at http://geneontology.org/page/download-annotations
+  - Made using latest version as of 8/1/2013
 
 ### Code Tutorial
 - gmt2gs.R
