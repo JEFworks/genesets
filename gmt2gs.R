@@ -2,23 +2,23 @@
 
 ## Example with Broad's MSigDB
 ## Source: http://www.broadinstitute.org/gsea/downloads.jsp
-## Current MSigDB gene sets, gene symbols msigdb.v4.0.symbols.gmt
-## Downloaded October 28, 2014
+## Current MSigDB gene sets, gene symbols msigdb.v5.0.symbols.gmt
+## Downloaded September 17, 2015
 
 ## read in Broad gmt format
-library(cnvGSA)
-filename <- 'msigdb.v4.0.symbols.gmt'
-gs <- readGMT(filename)
+library(GSA)
+filename <- 'msigdb.v5.0.symbols.gmt'
+gs <- GSA.read.gmt(filename)
 
 ## number of gene sets
-n <- length(gs$gs2gene)
+n <- length(gs$geneset.names)
 
 ## create environment
 env <- new.env(parent=globalenv())
 invisible(lapply(1:n,function(i) {
-    genes <- as.character(unlist(gs$gs2gene[i]))
-    name <- as.character(unlist(gs$gs2name[i]))
-    assign(name,genes,envir=env)
+  genes <- as.character(unlist(gs$genesets[i]))
+  name <- as.character(gs$geneset.names[i])
+  assign(name,genes,envir=env)
 }))
 
 MSigDB.Hs.GS2Symbol <- env
